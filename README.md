@@ -78,7 +78,7 @@ If everything works correctly, after few moments the initial page of the Module 
 should appear on your screen as shown.
 
 <img src="images/initial.png" width="1000">
-*Figure 1: initial page of Module Explorer web application.*
+*Figure 1: initial page of Module Explorer web application.
 
 ### Module explorer usage
 
