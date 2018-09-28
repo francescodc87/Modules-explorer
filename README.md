@@ -101,7 +101,7 @@ simply clicking on the related row.
 *Figure 3: Selected module.*
 <br />
 Once a module is selected, it is possible to click on the Module smCOG composition
-tab (highlited in ornge in Figure 3).
+tab (highlited in orange in Figure 3).
 <img src="images/smcog_comp.png" width="1000">
 *Figure 4: smCOG composition of selected module.*
 <br />
