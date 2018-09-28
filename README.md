@@ -54,15 +54,17 @@ file.rename(from = "Modules-explorer-master/", to="Module_Explorer/")
 
 Some of the files needed are to big to be hosted by GitHub.
 The [Zenodo](https://about.zenodo.org/) reseach data repository is used to store these
-additional data, which can be download and simply by copyng and pasting the following:
-
-
+additional data. One can manually download the additional files from https://zenodo.org/record/1434902/,
+extract the .zip file and move it into the Module_Explorer/ folder.
+It is necessary that the www folder extracted from the .zip file is merged
+with the www folder already present in within the Module_Explorer folder.
+Alternatively, the additional files can be simply downloaded by copyng and pasting the following:
 ```
 download.file(url="https://zenodo.org/record/1434902/files/www.zip?download=1", destfile = "Module_Explorer/www.zip")
 unzip("Module_Explorer/www.zip", exdir="Module_Explorer/", unzip=getOption("unzip"), junkpaths = TRUE)
 file.remove("Module_Explorer/www.zip")
 ```
-The zip file downloaded is 3.6 GB big, hence the download and the unzipping might take several minutes.
+The zip file downloaded is 3.6 GB big, hence the download and the unzipping will take several minutes.
 
 <br />
 <br />
@@ -77,14 +79,42 @@ shiny::runApp("Module_Explorer")
 If everything works correctly, after few moments the initial page of the Module Explorer
 should appear on your screen as shown.
 
-<img src="images/initial.png" width="1000">
-*Figure 1: initial page of Module Explorer web application.
+<img src="images/initial.png" height="1000">
+*Figure 1: initial page of Module Explorer web application.*
 
 ### Module explorer usage
 
+The table on the left side of Figure 1 contains all the detected modules ranked according to the MIB score
+computed using the weights described in the manuscript.
+As shown in Figure 2, it is possible to modify the weights according to the user needs.
+<img src="images/parameters.png" width="500">
+<br />
+*Figure 2: MIB score weights.*
+<br />
+After modyfing the parameters shown in Figure 2, it is necessary to click on the UPDATE MIB score button
+in order to update the shown table.
 
+It is also possible, as shown in Figure 3, to select any module from the table by
+simply clicking on the related row.
 
-
+<img src="images/selection.png" width="1000">
+*Figure 3: Selected module.*
+<br />
+Once a module is selected, it is possible to click on the Module smCOG composition
+tab (highlited in ornge in Figure 3).
+<img src="images/smcog_comp.png" width="1000">
+*Figure 4: smCOG composition of selected module.*
+<br />
+As shown in Figure 4, this will show the smCOG composition of the selected module.
+<br />
+Additionally when selecting the a module, a new link will appear below the UPDATE MIB score (highlighted in green).
+When clicked, this link will open a new tab showing the selected module mapped on all the biosynthetic
+gene clusters containg it, similarly as shown in Figure 5.
+<img src="images/Module_mapped.png" width="1000">
+*Figure 5: selected module mappend on Biosynthetic gene cluster.*
+<br />
+it is possible to click on any gene shown in this page, this will open a pop-up window showing
+the gene annotation, its location and providing a link to the NCBI blast of this gene.
 
 ## Built With
 
