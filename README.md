@@ -64,7 +64,7 @@ download.file(url="https://zenodo.org/record/1434902/files/www.zip?download=1", 
 unzip("Module_Explorer/www.zip", exdir="Module_Explorer/", unzip=getOption("unzip"), junkpaths = TRUE)
 file.remove("Module_Explorer/www.zip")
 ```
-The zip file downloaded is 3.6 GB big, hence the download and the unzipping will take several minutes.
+The zip file downloaded is 3.6 GB big, therefore the download and the unzipping will take several minutes.
 
 <br />
 <br />
@@ -79,7 +79,7 @@ shiny::runApp("Module_Explorer")
 If everything works correctly, after few moments the initial page of the Module Explorer
 should appear on your screen as shown.
 
-<img src="images/initial.png" height="1000">
+<img src="images/initial.png" width="1000">
 *Figure 1: initial page of Module Explorer web application.*
 
 ### Module explorer usage
