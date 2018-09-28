@@ -43,13 +43,21 @@ function(input, output, session) {
     
     
     ### I have to change this to stop seeing the warning.
-    output$mytable1 <- renderDT(datatable(Metrics.Modules.shiny[ind.kept,input$show_vars],
-                                            rownames=TRUE, options = list(
-                                              pageLength=20,
-                                              lengthMenu=c(20,100,200,500)
-                                            ), selection ="single") %>%
-                                    formatRound(c("MIB score" , "Shannon's Entropy", "max.pval" ),2),
-                                  server = TRUE, selection ="single")
+    # output$mytable1 <- renderDT(datatable(Metrics.Modules.shiny[ind.kept,input$show_vars],
+    #                                         rownames=TRUE, options = list(
+    #                                           pageLength=20,
+    #                                           lengthMenu=c(20,100,200,500)
+    #                                         ), selection ="single") %>%
+    #                                 formatRound(c("MIB score" , "Shannon's Entropy", "max.pval" ),2),
+    #                               server = TRUE, selection ="single")
+    # 
+    mt1 <- as.data.frame(Metrics.Modules.shiny[ind.kept,])
+    mt1[,c(1,9:19)] <- round(mt1[,c(1,9:19)],2)
+    mt1[,"max.pval"] <- format(mt1[,"max.pval"],digits = 2, scientific = T)
+    mt1[,"Shannon's Entropy"] <- format(mt1[,"Shannon's Entropy"],digits = 2, scientific = T)
+    output$mytable1 <- renderDT(mt1[,input$show_vars], selection="single", server = TRUE, 
+                                options = list(pageLength=20, lengthMenu=c(20,100,200,500)))
+
   
       
     table1.names.rv$a <- rownames(Metrics.Modules.shiny[ind.kept,])
