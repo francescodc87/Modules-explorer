@@ -15,7 +15,7 @@ recommended to read the [introduction to R](https://cran.r-project.org/doc/manua
 document first.
 <br />
 <br />
-The download an installation of [RStudio](https://www.rstudio.com/) is also necessary. RStudio
+The download an installation of [Firefox](https://www.mozilla.com) [RStudio](https://www.rstudio.com/) is also necessary. RStudio
 is a free and open-source integrated development environment for R.
 <br />
 <br />
@@ -26,7 +26,7 @@ GUI console
 install.packages(c("shiny", "DT", "markdown"))
 ```
 <br />
-In order to fully exploit the Module Explorer capabilities, the [Firefox](https://www.mozilla.com) web browser should
+In order to fully exploit the Module Explorer capabilities, the  web browser should
 be installed in your computer and should be set as default browser.
 
 
