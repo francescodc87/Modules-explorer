@@ -26,7 +26,7 @@ GUI console
 install.packages(c("shiny", "DT", "markdown"))
 ```
 <br />
-In order to fully exploit the Module Explorer capabilities, the [Firefox](https://www.mozilla.org/en-GB/) web browser should
+In order to fully exploit the Module Explorer capabilities, the [Firefox](https://www.mozilla.com) web browser should
 be installed in your computer and should be set as default browser.
 
 
