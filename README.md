@@ -1,12 +1,11 @@
 # Module Explorer
 
-The Shiny application here described provides a very simple tool for exploring the full collection of multi-gene modules
-detected with the method described in: "Computational identification of co-evolving multi-gene modules in microbial biosynthetic gene clusters".
+The Shiny application here described provides a very simple tool for exploring the full collection of multi-gene modules detected with the method described in: "Computational identification of co-evolving multi-gene modules in microbial biosynthetic gene clusters".
 
 ## Getting Started
 
-Despite being deployed as a web-application, the Module Explorer is meant to be run locally.
-Therefore it requires the installation of some software in order to run.
+Despite being deployed as a web-application, the Module Explorer is meant to be run locally. Therefore it requires the installation of some software in order to run.
+
 
 ### Prerequisites
 Prior installation of the Module Explorer, it is necessary to download and install
