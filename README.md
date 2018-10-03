@@ -26,7 +26,7 @@ GUI console
 install.packages(c("shiny", "DT", "markdown"))
 ```
 <br />
-In order to fully exploit the Module Explorer capabilities, the  web browser should
+In order to fully exploit the Module Explorer capabilities, [Firefox](https://www.mozilla.com) [RStudio](https://www.rstudio.com/) the  web browser should
 be installed in your computer and should be set as default browser.
 
 
